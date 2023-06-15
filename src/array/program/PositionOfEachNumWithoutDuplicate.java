@@ -1,8 +1,8 @@
-package com.assignment.java;
+package array.program;
 
 import java.util.LinkedHashSet;
 
-public class OccuranceOfEachNumWithoutDuplicate {
+public class PositionOfEachNumWithoutDuplicate {
 
 	public static void main(String[] args) {
 		int[] a= {4,1,4,2,0,2};

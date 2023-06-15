@@ -1,6 +1,6 @@
 package array.program;
 
-public class Random1 
+public class ShiftUsingKey 
 {
 	public static void main(String[] args) 
 	{

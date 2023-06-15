@@ -1,4 +1,4 @@
-package com.assignment.java;
+package string.program;
 
 public class SumOfDigits {
 

@@ -3,32 +3,51 @@ package string.program;
 public class AddOnlyNumbersInString {
 
 	public static void main(String[] args) {
-		String str="a1b3d4"; //1+3+4 //o/p 8
-		
-		int num=0;
-		for (int i = 0; i < str.length(); i++) {
-			if(str.charAt(i)>='0' && str.charAt(i)<='9' ) {
-				int n=str.charAt(i)-48;
-				num=num+n;
+		sumOfSingleDigit("bfh253jd94dj3");
+		printNumSequence("bfh253jd94dj3");
+		sumOfSequenceNum("bfh253jd94dj3");
+	}
+
+	public static void sumOfSingleDigit(String nameString) {
+		int num = 0;
+		for (int i = 0; i < nameString.length(); i++) {
+			char ch = nameString.charAt(i);
+			if (ch >= '0' && ch <= '9') {
+				int n = ch - 48;
+				num = num + n;
 			}
 		}
 		System.out.println(num);
-		System.out.println();
-		
-		String s="a12bc11"; //12+11 //o/p 23
-		int tsum=0; //1 12 0 0 1 11
-		int sum=0; //12 12
-		for (int i = 0; i < s.length(); i++) {
-			if(s.charAt(i)>='0' && s.charAt(i)<='9' ) {
-				int n1=s.charAt(i)-48; 
-				tsum=tsum*10+n1;
-			}else {
-				sum=sum+tsum;
-				tsum=0;
+	}
+
+	public static void printNumSequence(String nameString) {
+		int tsum = 0;
+		for (int i = 0; i < nameString.length(); i++) {
+			char ch = nameString.charAt(i);
+			if (ch >= '0' && ch <= '9') {
+				int n = ch - 48;
+				tsum = tsum * 10 + n;
 			}
 		}
-		sum=sum+tsum; //12+11=23
-		System.out.println(sum); //23
+		System.out.println(tsum);
+	}
+
+	public static void sumOfSequenceNum(String nameString) {
+
+		int tsum = 0;
+		int sum = 0;
+		for (int i = 0; i < nameString.length(); i++) {
+			char ch = nameString.charAt(i);
+			if (ch >= '0' && ch <= '9') {
+				int num = ch - 48;
+				tsum = tsum * 10 + num;
+			} else {
+				sum = sum + tsum;
+				tsum = 0;
+			}
+		}
+		tsum = sum + tsum;
+		System.out.println(tsum);
 	}
 
 }
