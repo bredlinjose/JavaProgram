@@ -1,6 +1,6 @@
 package array.program;
 
-public class Random3 
+public class ShiftZero 
 {
 	public static void main(String[] args) 
 	{

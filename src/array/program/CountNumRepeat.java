@@ -1,4 +1,4 @@
-package com.assignment.java;
+package array.program;
 
 import java.util.LinkedHashSet;
 

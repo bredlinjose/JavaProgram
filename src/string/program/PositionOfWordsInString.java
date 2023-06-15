@@ -2,7 +2,7 @@ package string.program;
 
 import java.util.LinkedHashSet;
 
-public class OccuranceOfWordsInString {
+public class PositionOfWordsInString {
 
 	public static void main(String[] args) {
 		String s="welcome to bangaluru and welcome to testyantra";

@@ -1,8 +1,8 @@
-package com.assignment.java;
+package array.program;
 
 import java.util.LinkedHashSet;
 
-public class RemoveDuplicateInt {
+public class CountDuplicateInt {
 
 	public static void main(String[] args) {
 		int[] a= {4,1,4,2,0,2};
@@ -11,10 +11,17 @@ public class RemoveDuplicateInt {
 		{
 			set.add(a[i]);
 		}
-		//System.out.println(set);
 		for (Integer integer : set) {
-			System.out.print(integer+" ");
-			
+			int count=0;
+			for (int i = 0; i < a.length; i++) {
+				if(integer==a[i]) {
+					count++;
+				}
+			}
+			if(count>1)
+			{
+				System.out.println(integer+" is repeating "+count+" times");
+			}
 		}
 	}
 
