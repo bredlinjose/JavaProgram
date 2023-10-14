@@ -1,10 +1,10 @@
-package assignment;
+package training.assesment;
 import java.util.HashMap;
 import java.util.Scanner;
 import java.util.stream.DoubleStream;
 
 //Creating public class 
-public class Main 
+public class Newspaper 
 {
     //Creating method
     private void Budget(int amount)
@@ -69,7 +69,7 @@ public class Main
       System.out.println("Enter the budget value:");
       int n = sc.nextInt();
       //creating object to main class
-      Main ms= new Main();
+      Newspaper ms= new Newspaper();
       //calling main method by passing the budget amount
       ms.Budget(n);
     }

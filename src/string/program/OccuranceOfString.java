@@ -21,7 +21,7 @@ public class OccuranceOfString {
 		for (String string : set) {
 			int num = 0;
 			for (int i = 0; i < arr.length; i++) {
-				if (string.contains(arr[i])) {
+				if (string.equals(arr[i])) {
 					num = num + 1;
 				}
 			}
