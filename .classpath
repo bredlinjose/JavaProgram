@@ -9,5 +9,6 @@
 	<classpathentry kind="src" path="training"/>
 	<classpathentry kind="src" path="revision"/>
 	<classpathentry kind="src" path="assessment"/>
+	<classpathentry kind="src" path="leetcode"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
