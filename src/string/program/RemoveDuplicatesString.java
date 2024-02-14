@@ -12,6 +12,8 @@ public class RemoveDuplicatesString {
 		{
 			set.add(s.charAt(i));
 		}
+		//System.out.println(String.valueOf(set));
+		
 		for (Character ch : set) {
 			System.out.print(ch+" ");
 		}

@@ -1,5 +1,7 @@
 package array.program;
 
+import java.util.Arrays;
+
 public class ShiftUsingKey 
 {
 	public static void main(String[] args) 
@@ -15,8 +17,6 @@ public class ShiftUsingKey
 			}
 			a[a.length-1]=temp;	
 		}
-		for (int i = 0; i < a.length; i++) {
-			System.out.print(a[i]+" ");
-		}
+			System.out.print(Arrays.toString(a));
 	}
 }
