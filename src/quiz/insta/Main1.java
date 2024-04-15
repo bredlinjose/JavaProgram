@@ -1,4 +1,4 @@
-package insta;
+package quiz.insta;
 
 public class Main1 {
 
