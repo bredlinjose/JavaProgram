@@ -4,15 +4,21 @@ import java.util.Scanner;
 
 public class Factorial {
 
-	public static void main(String[] args) {
-		// n1*n2*n3*.....*nx
-		Scanner scanner = new Scanner(System.in);
-		int num= scanner.nextInt();
+	private static int printFactorial(int num) {
 		int fact=1;
-		for (int i = 1; i <= num; i++) {
-			fact =fact*i;
+		for(int i= num; i>=1; i--) {
+			fact*=i;
 		}
-		System.out.println(fact);
+		return fact;
+	}
+
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Enter the number: ");
+		int number= sc.nextInt();
+		System.out.println(printFactorial(number));
+
 	}
 
 }
