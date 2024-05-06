@@ -1,14 +1,16 @@
 package string.program;
 
-public class AddOnlyNumbersInString {
+public class SumOfSequence {
 
 	public static void main(String[] args) {
-		sumOfSingleDigit("bfh253jd94dj3");
-		printNumSequence("bfh253jd94dj3");
-		sumOfSequenceNum("bfh253jd94dj3");
+		String str = "bfh253jd94dj3";
+		System.out.println(sumOfSingleDigit(str));
+		System.out.println(printNumSequence(str));
+		System.out.println(sumOfSequenceNum(str));
+		
 	}
 
-	public static void sumOfSingleDigit(String nameString) {
+	public static int sumOfSingleDigit(String nameString) {
 		int num = 0;
 		for (int i = 0; i < nameString.length(); i++) {
 			char ch = nameString.charAt(i);
@@ -17,10 +19,10 @@ public class AddOnlyNumbersInString {
 				num = num + n;
 			}
 		}
-		System.out.println(num);
+		return num;
 	}
 
-	public static void printNumSequence(String nameString) {
+	public static int printNumSequence(String nameString) {
 		int tsum = 0;
 		for (int i = 0; i < nameString.length(); i++) {
 			char ch = nameString.charAt(i);
@@ -29,10 +31,10 @@ public class AddOnlyNumbersInString {
 				tsum = tsum * 10 + n;
 			}
 		}
-		System.out.println(tsum);
+		return tsum;
 	}
 
-	public static void sumOfSequenceNum(String nameString) {
+	public static int sumOfSequenceNum(String nameString) {
 
 		int tsum = 0;
 		int sum = 0;
@@ -47,7 +49,7 @@ public class AddOnlyNumbersInString {
 			}
 		}
 		tsum = sum + tsum;
-		System.out.println(tsum);
+		return tsum;
 	}
 
 }

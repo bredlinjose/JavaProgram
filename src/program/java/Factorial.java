@@ -12,12 +12,22 @@ public class Factorial {
 		return fact;
 	}
 
+	private static int recFact(int num) {
+		if (num == 0) {
+			return 1;
+		}else {
+			return num * recFact(num-1);
+		}	
+	}
 
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
 		System.out.println("Enter the number: ");
 		int number= sc.nextInt();
+		
 		System.out.println(printFactorial(number));
+		
+		System.out.println(recFact(number));
 
 	}
 
