@@ -28,8 +28,8 @@ public class Main_ATM {
 
 		while (true) {
 			System.out.println("1. View Balance");
-			System.out.println("2. Cash Withdraw");
-			System.out.println("3. Cash Deposit");
+			System.out.println("2. Cash Deposit");
+			System.out.println("3. Cash Withdraw");
 			System.out.println("4. View Mini Statement");
 			System.out.println("5. Exit");
 
