@@ -26,7 +26,7 @@ public class BalancedBracket {
 				stack.pop();
 				break;
 
-			case ')': 
+			case ')': 	
 				if(!stack.peek().equals('('))
 					return false;
 
