@@ -31,7 +31,7 @@ public class LongestSubString {
 		return str.substring(x, x+maxLength);
 	}
 	
-	public static String longestSubString(String str1, String str2) {
+	public static String longestCommonSubString(String str1, String str2) {
 		// Brute Force
 		int maxLen = 0;
 	    String result = "";
@@ -54,7 +54,7 @@ public class LongestSubString {
 		
 		String str1 = "abcdef";
 		String str2 = "zcdefmf";
-		System.out.println(longestSubString(str1, str2));  // cde
+		System.out.println(longestCommonSubString(str1, str2));  // cde
 		
 		
 		System.out.println(str1.substring(0, 4));

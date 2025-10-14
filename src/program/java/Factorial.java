@@ -2,6 +2,11 @@ package program.java;
 
 import java.util.Scanner;
 
+/*
+ * The factorial of a number is the product of all positive integers less than or equal to that number. 
+ * It's denoted by an exclamation mark (!) after the number. 
+ * For example, the factorial of 5 (written as 5!) is 5 * 4 * 3 * 2 * 1 = 120. 
+ */
 public class Factorial {
 
 	private static int printFactorial(int num) {
